@@ -135,38 +135,35 @@
           </p>
         </div>
       </div>
-      <div class="col-md-6">
-        <form id="contact" class="form">
-          <div class="form-group">
-            <select class="form__field form__select">
-              <option selected value>Choose topic*</option>
-              <option value=1>I want to learn more/option>
-              <option value=2>Others</option>
-            </select>
-            </div>
-           <div class="form-group">
-             <div class="form__field--half">
-            <input type="text" placeholder="Name*" class="form__field form__text"></input>
-             </div>
-          <div class="form__field--half">
-          <input type="text" placeholder="Surname" class="form__field form__text"></input>
-          </div>
-          </div>
-      
+      <div class="col-md-6"><form action="https://formspree.io/f/myyawkbd" method="POST" id="contact" class="form">
+        <div class="form-group">
+          <select class="form__field form__select" name="topic" required>
+            <option selected disabled>Choose topic*</option>
+            <option value="1">I want to learn more</option>
+            <option value="2">Others</option>
+          </select>
+        </div>
         <div class="form-group">
           <div class="form__field--half">
-            <input type="text" placeholder="Email address*" class="form__field form__text"></input>
+            <input type="text" placeholder="Name*" class="form__field form__text" name="name" required></input>
           </div>
-         <div class="form__field--half">
-          <input type="text" placeholder="Phone number" class="form__field form__text"></input>
-    </div>
+          <div class="form__field--half">
+            <input type="text" placeholder="Surname" class="form__field form__text" name="surname"></input>
           </div>
-  
-          <div class="form-group">
-            <textarea type="text" placeholder="Your messsage*" class="form__field form__textarea"></textarea>
-            <button class="btn btn--up btn--width" type="submit">Submit</button>
+        </div>
+        <div class="form-group">
+          <div class="form__field--half">
+            <input type="email" placeholder="Email address*" class="form__field form__text" name="email" required></input>
           </div>
-        </form>
+          <div class="form__field--half">
+            <input type="tel" placeholder="Phone number" class="form__field form__text" name="phone"></input>
+          </div>
+        </div>
+        <div class="form-group">
+          <textarea placeholder="Your message*" class="form__field form__textarea" name="message" required></textarea>
+          <button class="btn btn--up btn--width" type="submit">Submit</button>
+        </div>
+      </form>      
       </div>   
 <div class="col-md-1"></div>
     </div>
