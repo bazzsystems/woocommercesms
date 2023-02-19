@@ -70,9 +70,9 @@ background-image: url("https://image.ibb.co/de6JzG/bitmap_1_1.png");
   margin: 0px; 
   color: #8198ae;
 }
-
 .price-box{
   padding: 0px 25px;  
+
 }
 
 .price-box__wrap{
@@ -187,8 +187,8 @@ background-image: url("https://image.ibb.co/de6JzG/bitmap_1_1.png");
 
 .price-box__list-el{
   position: relative;
-  margin-bottom: 8px;
-  font-weight: 300;
+  margin-bottom: 10px;
+  font-weight: 600;
 }
 
 .price-box__list-el:before{
